@@ -1,0 +1,14 @@
+[user]
+	email = samuli.kupsala@gmail.com
+	name = skupsala
+[alias]
+	co = checkout
+	cob = checkout -b
+	rb = rebase
+	lsh = for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+	save = !git add -u && git commit -m 'SAVEPOINT'
+	visb = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	todo-branches = branch --no-merged master
+	logg = log --stat --decorate
+[core]
+	excludesfile = /home/skupsala/.gitignore_global
