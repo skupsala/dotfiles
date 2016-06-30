@@ -160,4 +160,7 @@ alias greppi='grep -nri'
 alias greppy='grep -nri --include "*.py"'
 alias grepphp='grep -nria --include "*.php"'
 
+# Usage watch-subp python3 -> lists processess starting python3 as parent process
+alias watch-subp='function _watch_subp() { watch "ps aufx|grep -i -A 10 $1"; };_watch_subp'
+
 alias docker-rmi-untagged='docker rmi $(docker images -a | grep "^<none>" | awk "{print $3}")'
