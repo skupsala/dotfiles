@@ -2,6 +2,7 @@
 	email = samuli.kupsala@gmail.com
 	name = skupsala
 [alias]
+	st = status
 	co = checkout
 	cob = checkout -b
 	rb = rebase
