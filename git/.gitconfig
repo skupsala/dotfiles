@@ -11,5 +11,6 @@
 	visb = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	todo-branches = branch --no-merged master
 	logg = log --stat --decorate
+        fixp = !git add -u && git commit --amend --no-edit
 [core]
 	excludesfile = /home/skupsala/.gitignore_global
