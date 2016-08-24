@@ -155,7 +155,11 @@ alias cdsi='cd ~/code/selko/softagram-install'
 
 alias lsl='ls -ltrah'
 
+# Greps history
 alias hgrep='history | grep'
+# Greps full history from my bash_history rotation
+alias hgrepful='function _hgrepful() { grep -ri $1 ~/.bash_history*; };_hgrepful'
+
 alias greppi='grep -nri'
 alias greppy='grep -nri --include "*.py"'
 alias grepphp='grep -nria --include "*.php"'
