@@ -155,6 +155,9 @@ alias cdsi='cd ~/code/selko/softagram-install'
 
 alias lsl='ls -ltrah'
 
+# A bit more informative show type, human readable, show all and show total row
+alias df='df -Tha --total'
+
 # Greps history
 alias hgrep='history | grep'
 # Greps full history from my bash_history rotation
