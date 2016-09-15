@@ -167,6 +167,9 @@ alias greppi='grep -nri'
 alias greppy='grep -nri --include "*.py"'
 alias grepphp='grep -nria --include "*.php"'
 
+# Alias to allow usage of IPython within virtualenvs
+alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
+
 # Start android studio
 alias android-studio='/opt/android-studio/bin/studio.sh'
 
