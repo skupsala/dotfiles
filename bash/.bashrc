@@ -181,3 +181,6 @@ alias watch-subp='function _watch_subp() { watch "ps aufx|grep -i -A 10 $1"; };_
 
 # Remove untagged docker images
 alias docker-rmi-untagged='docker rmi $(docker images -a | grep "^<none>" | awk "{print $3}")'
+
+# Recursively unzip zipped files
+alias unzip-recr='find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;'
