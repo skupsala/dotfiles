@@ -12,6 +12,7 @@
 	todo-branches = branch --no-merged master
 	logs = log --decorate
 	logg = log --stat --decorate
+	logp = log --decorate -p -C -w
         fixp = !git add -u && git commit --amend --no-edit
 [core]
 	excludesfile = /home/skupsala/.gitignore_global
