@@ -146,13 +146,6 @@ if [ -s "$BASH_HIST" -a "$BASH_HIST" -nt "$BACKUP" ]; then
   fi
 fi
 
-
-alias cds='cd ~/code/selko'
-alias cdss='cd ~/code/selko/softagram'
-alias cdsss='cd ~/code/selko/softagram/src'
-alias cdsd='cd ~/code/selko/softagram-desktop'
-alias cdsi='cd ~/code/selko/softagram-install'
-
 alias lsl='ls -ltrah'
 
 # A bit more informative show type, human readable, show all and show total row
