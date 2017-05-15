@@ -14,5 +14,6 @@
 	logg = log --stat --decorate
 	logp = log --decorate -p -C -w
         fixp = !git add -u && git commit --amend --no-edit
+	todo-master = !git merge-base --fork-point master|xargs -I {} git diff {}..HEAD|grep -E -i -C 5 '^\\+.*(TODO|FIXME)'
 [core]
 	excludesfile = /home/skupsala/.gitignore_global
