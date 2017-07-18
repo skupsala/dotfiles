@@ -17,5 +17,6 @@
         fixp = !git add -u && git commit --amend --no-edit
 	todo-master = !git merge-base --fork-point master|xargs -I {} git diff {}..HEAD|grep -E -i -C 5 '^\\+.*(TODO|FIXME)'
 	delete-merged = !git branch --merged|grep -E -v '(^\\*|master|dev)'|xargs git branch -d
+	remote-branches = !git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | sort -k5n -k2M -k3n -k4n
 [core]
 	excludesfile = /home/skupsala/.gitignore_global
