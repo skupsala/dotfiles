@@ -2,6 +2,7 @@
 	email = samuli.kupsala@gmail.com
 	name = Samuli Kupsala
 [alias]
+        pull = pull --ff-only
 	st = status
 	co = checkout
 	cob = checkout -b
