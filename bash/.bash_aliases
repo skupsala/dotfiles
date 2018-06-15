@@ -34,3 +34,4 @@ alias unzip-recr='find . -name "*.zip" | while read filename; do unzip -o -d "`d
 
 # git aliases
 alias gp='git pull'
+alias gs='git status'
