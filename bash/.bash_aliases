@@ -31,3 +31,6 @@ alias docker-rmi-untagged='docker rmi $(docker images -a | grep "^<none>" | awk 
 
 # Recursively unzip zipped files
 alias unzip-recr='find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;'
+
+# git aliases
+alias gp='git pull'
