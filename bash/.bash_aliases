@@ -1,5 +1,7 @@
 alias lsl='ls -ltrah'
 
+alias cdc='cd ~/code'
+
 # A bit more informative show type, human readable, show all and show total row
 alias df='df -Tha --total'
 
